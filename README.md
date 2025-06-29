@@ -15,7 +15,7 @@ This is a simple machine learning project that uses Linear Regression to predict
    - Your **years of work experience**
 3. The model will return:
    - ✅ "You have been hired.." if accepted
-   - ❌ "you were not hired." if rejected
+   - ❌ "You were not hired." if rejected
 
 ## 🛠 Technologies Used
 
