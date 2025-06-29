@@ -14,17 +14,17 @@ y = np.array([0, 1, 0, 1, 1, 1])
 model = LinearRegression()
 model.fit(X, y)
 
-age = int(input('Yoshingizni kiring: '))
-IELTS = float(input('IELTS balingizni kiriting: '))
-experience = int(input('Necha yillik tajribaga egasiz: '))
+age = int(input('Enter your age: '))
+IELTS = float(input('Enter your IELTS score: '))
+experience = int(input('How many years of experience do you have?: '))
 
 new_condidate = np.array([[age, float(IELTS), experience]])
 prediction = model.predict(new_condidate)
 
 def accepted_or_no(prediction):
   if round(prediction[0]) == 1:
-    return 'Ishga qabul qilindingiz.'
+    return 'You have been hired..'
   else:
-    return 'Ishga qabul qilinmadingiz'
+    return 'You were not hired.'
 
 print(accepted_or_no(prediction))
